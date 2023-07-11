@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e6eff6;
+    font-family: 'Karla', sans-serif;
+}
+
+.container {
+    max-width: 635px;
+    margin: 162px auto;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 10px 20px 0px rgba(83, 120, 230, 0.5);
+    -moz-box-shadow: 0px 10px 20px 0px rgba(83, 120, 230, 0.5);
+    box-shadow: 0px 10px 20px 0px rgba(83, 120, 230, 0.5);
+}
+
+/* ---------------------- top block ---------------------- */
+.top-box {
+    background-color: #fff;
+    padding: 22px 40px 36px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.top-box__content h2 {
+    color: hsl(179, 62%, 43%);
+}
+
+.top-box__offer {
+    color: hsl(71, 73%, 54%);
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-top: 24px;
+    margin-bottom: 14px;
+}
+
+.top-box__text {
+    margin: 7px 0;
+    color: hsl(218, 22%, 67%);
+}
+
+/* -------------------- bottom blocks -------------------- */
+.bottom-box-container {
+    display: flex;
+}
+
+/* ------------------ bottom left block ------------------ */
+.bottom-box-container h3 {
+    font-size: 1.13rem;
+}
+
+.left-box,
+.right-box {
+    padding: 23px 40px 10px;
+    flex: 50%;
+    color: #fff;
+}
+
+.left-box {
+    background-color: #2bb3b1;
+    border-bottom-left-radius: 10px;
+}
+
+.left-box__price {
+    margin-bottom: 0;
+}
+
+.left-box__price .price-amount {
+    color: #fff;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.left-box__price .per-month {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 16px;
+    margin-left: 12px;
+    color: #88e8e7;
+}
+
+.left-box__offer-text {
+    margin-top: 0;
+}
+
+.left-box .sign-up-btn {
+    font-family: 'Karla', sans-serif;
+    display: block;
+    margin: 30px auto;
+    padding: 16px 0;
+    width: 100%;
+    background-color: hsl(71, 73%, 54%);
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* ------------------ bottom right block ------------------ */
+.right-box {
+    background-color: #4abebd;
+    border-bottom-right-radius: 10px;
+}
+
+.right-box ul {
+    padding: 0;
+    list-style: none;
+}
+
+.right-box__text-list {
+    color: #a6edf1;
+    line-height: 20px;
+    font-size: 0.9rem;
+}
+
+/* -------------------- responsiveness -------------------- */
+@media (max-width: 700px) {
+    .container {
+        margin: 100px 32px;
+    }
+}
+
+@media (max-width: 540px) {
+    .bottom-box-container {
+        flex-direction: column;
+    }
+
+    .left-box {
+        border-bottom-left-radius: 0;
+    }
+
+    .right-box {
+        border-bottom-left-radius: 10px;
+    }
+}
